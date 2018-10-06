@@ -1,0 +1,6 @@
+// $Id: Test.idl 97581 2014-02-11 23:03:19Z mesnier_p $
+
+interface Test
+{
+  long server_pid ();
+};

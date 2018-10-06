@@ -1,0 +1,8 @@
+// -*- MPC -*-
+// $Id: naming.mpb 97018 2013-04-15 14:13:37Z mitza $
+
+project : orbsvcslib, svc_utils {
+  after     += CosNaming
+  libs      += TAO_CosNaming
+  tagchecks += Naming
+}

@@ -1,0 +1,22 @@
+/**
+ * @file Null_Interface.idl
+ *
+ * @author Abdul Sowayan <sowayan@gmail.com>
+ *
+ * $Id: Null_Interface.idl 96159 2012-09-27 09:01:58Z johnnyw $
+ */
+
+#ifndef NULL_INTERFACE_IDL
+#define NULL_INTERFACE_IDL
+
+#pragma ciao lem "Null_InterfaceE.idl"
+
+/**
+ * @interface Null_Interface
+ */
+interface Null_Interface
+{
+  void null_operation();
+};
+
+#endif /* NULL_INTERFACE_IDL */

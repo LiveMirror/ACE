@@ -1,0 +1,9 @@
+// $Id: Test.idl 97460 2013-12-12 15:41:00Z mesnier_p $
+
+interface Test
+{
+  oneway void foo ();
+
+  short get_call_count ();
+
+};

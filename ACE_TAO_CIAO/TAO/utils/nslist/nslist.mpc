@@ -1,0 +1,31 @@
+// -*- MPC -*-
+// $Id: nslist.mpc 96382 2012-11-27 10:27:14Z johnnyw $
+
+project(nsadd): namingexe, install {
+  install = $(ACE_ROOT)/bin
+  exename = tao_nsadd
+  Source_Files {
+    nsadd.cpp
+  }
+}
+
+project(nsdel): namingexe, install, svc_utils, messaging {
+  install = $(ACE_ROOT)/bin
+  exename = tao_nsdel
+  Source_Files {
+    nsdel.cpp
+  }
+}
+
+project(nslist): namingexe, install, svc_utils, messaging, strategies {
+  install = $(ACE_ROOT)/bin
+  exename = tao_nslist
+  Source_Files {
+    nslist.cpp
+  }
+  InstallData_Files {
+    gendir = tao-utils
+    README.nslist
+  }
+}
+

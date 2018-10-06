@@ -1,0 +1,9 @@
+// -*- MPC -*-
+// $Id: Bug_3701_Regression.mpc 97131 2013-05-13 19:18:55Z mesnier_p $
+
+project(*Client): taoclient {
+  Source_Files {
+    client.cpp
+  }
+}
+

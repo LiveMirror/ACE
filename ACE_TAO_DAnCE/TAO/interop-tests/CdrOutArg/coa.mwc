@@ -1,0 +1,4 @@
+// $Id: coa.mwc 97394 2013-10-28 21:54:55Z mesnier_p $
+workspace {
+  tao/CdrOutArg.mpc
+}

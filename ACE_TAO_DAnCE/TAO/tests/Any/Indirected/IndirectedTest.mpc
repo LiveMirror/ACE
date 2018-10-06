@@ -1,0 +1,22 @@
+// -*- MPC -*-
+//
+// $Id: IndirectedTest.mpc 97499 2014-01-03 19:29:12Z mcorino $
+
+project(*idl): taoidldefaults, valuetype {
+  IDL_Files {
+    test.idl
+  }
+  custom_only = 1
+}
+
+project(*Client): taoclient, valuetype, typecodefactory {
+  exename = client
+  after += *idl
+
+  Source_Files {
+    testC.cpp
+    client.cpp
+  }
+  IDL_Files {
+  }
+}
